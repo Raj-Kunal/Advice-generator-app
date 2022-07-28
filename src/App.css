@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+
+
+:root {
+
+  /* primary  */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* secondary */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--Dark-Blue);
+  font-family: Manrope;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem 5rem;
+  background-color: var(--Dark-Blue);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card{
+  max-width:  34rem;
+  padding: 2rem;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 20px;
+  /* box-shadow: ; */
+}
+
+.adviceNumber{
+  text-align: center;
+  color: var(--Neon-Green);
+  margin-bottom: 1rem;
+  font-family: Manrope;
+}
+
+.advice{
+  text-align: center;
+  color: var(--Light-Cyan);
+  font-family: Manrope;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.divider-desktop{
+  width: 100%;
+   height: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -2rem;
+}
+.divider-mobile{
+  display: none;
+}
+
+
+.dice{
+  position: relative;
+  left: 12.90rem;
+  top: 4.35rem;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} 
+.icon :hover{
+  box-shadow: 0 0 12px 9px rgba(77, 228, 153, 0.4) ;
 }
 
-.App-link {
-  color: #61dafb;
+.attribution{
+  position: fixed;
+  top: 42rem;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+ font-size: 11px;
+  text-align: center; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button{
+  border: none;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 430px) {
+ 
+  .advice{
+    font-size: 1rem;
+  font-weight: 500;
   }
-  to {
-    transform: rotate(360deg);
+  .divider-mobile{
+    width: 100%;
+     height: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -2rem;
+  }
+
+  .divider-desktop{
+    display: none;
+  }
+
+
+  .dice{
+    position: relative;
+    left: 7.70rem;
+    top: 3.55rem;
+    width: 50px;
+    height: 50px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  .attribution{
+    position: fixed;
+    top: 34rem;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+   font-size: 11px;
+    text-align: center; 
   }
 }
