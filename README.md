@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Raj-Kunal/Advice-generator-app)
+- Live Site URL: [Add live site URL here](https://advice-generator-app-nine-dusky.vercel.app/)
 
 ### Built with
 
@@ -33,8 +33,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Kunal Raj](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+<!-- - Website - [Kunal Raj](https://www.your-site.com) -->
+- Frontend Mentor - [@Raj-Kunal](https://www.frontendmentor.io/profile/Raj-Kunal)
 
 
 # Getting Started with Create React App
